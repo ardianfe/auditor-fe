@@ -1,0 +1,46 @@
+  <form name="uploadForm" action="localhost:8080/upload-file", onsubmit="return sendFile()" method="post"> 
+        <!-- <label class="custom-file-upload">
+            <input type="file" name="file" class="file-upload" />
+            <i class="fa fa-cloud-upload"></i> Pilih File Auditor
+        </label> -->
+        <input type="file" name="file" class="file-upload" >
+        <input type="submit" class="btn fa-input" value="Upload">
+        <!-- <button class="file-button" type="submit">
+            <i class="fas fa-file-upload fa-2x"></i>
+        </button>    -->
+    </form>
+
+
+    //Selectors
+const uploadFile = document.querySelector('.file-upload');
+const uploadButton = document.querySelector('.file-button');
+const uploadRes = document.querySelector('.last-upload');
+const form = document.querySelector('form')
+
+
+//Event Listeners
+uploadFile.addEventListener('change', addFile);
+form.addEventListener('submit', (e) => {
+    e.preventDefault()
+  
+    // ...
+  })
+console.log(form)
+const files = document.querySelector('[type=file]').files;
+console.log(files)
+
+//Function
+function addFile(event){
+    var input = event.srcElement;
+    var fileName = input.files[0].name;
+    console.log(fileName)
+}
+
+function sendFile() {
+    var x = document.forms["myForm"]["file"].value;
+    console.log("hello")
+    if (x == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+}

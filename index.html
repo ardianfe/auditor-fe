@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link 
+        rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" 
+        integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" 
+        crossorigin="anonymous" 
+    />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Kompetensi Auditor</title>
+</head>
+<body>
+<a href="/">Home</a>
+<div class="wrapper">
+    <header>
+        <h1>Auditor B4T</h1>
+    </header>
+    
+    <div class="formInput">   
+        <h3>Input hasil assessment auditor disini</h3>
+        <form method="post">
+            <label class="custom-file-upload">
+                <input type="file" name="file" class="file-upload"/>
+                <i class="fa fa-cloud-upload"></i>
+            </label>
+            <button class="file-button" type="submit">
+                <i class="fas fa-file-upload fa-2x"></i>
+            </button>   
+        </form>
+    </div>  
+
+    <div class="container">
+        <h1>List Auditor</h1>
+        <div class="grid-container">
+            <!-- <div>
+                Nama Personel
+                Status
+            </div> -->
+        </div>
+    </div>
+
+</div>    
+    <script src="./app.js"></script>
+    <script type="module" src="/modelJS/personnel.js"></script>
+
+</body>
+</html>
